@@ -3,68 +3,149 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tu Nombre - Soluciones Digitales</title>
-    <!-- Fuente limpia y profesional -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <!-- Librería de Animaciones (AOS) -->
+    <title>Clienteo | Agencia de Conversión & Digital Growth</title>
+    <!-- Fuentes de Google -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <!-- Librería AOS para Animaciones -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Hoja de estilos -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Barra de Navegación -->
-    <header>
+
+    <!-- Navegación -->
+    <header data-aos="fade-down">
         <div class="container nav-container">
-            <div class="logo">TuNombre.</div>
+            <a href="#inicio">
+                <!-- Tu logo de 2000x500. El CSS lo hará proporcionado -->
+                <img src="logo.png" alt="Clienteo Logo" class="logo">
+            </a>
             <nav>
-                <a href="#inicio">Inicio</a>
-                <a href="#servicios">Qué Hago</a>
-                <a href="#proyectos">Proyectos</a>
+                <a href="#filosofia">Filosofía</a>
+                <a href="#soluciones">Soluciones Digitales</a>
+                <a href="#transformacion">Transformación</a>
+                <a href="#sistemas">Sistemas</a>
             </nav>
+            <a href="#contacto" class="btn btn-outline">Hablemos</a>
         </div>
     </header>
 
-    <!-- Sección Principal (Hero) - Mensaje directo -->
+    <!-- Hero Section -->
     <section id="inicio" class="hero">
-        <div class="container">
-            <h1 data-aos="fade-up">Soluciones tecnológicas simples para problemas reales.</h1>
-            <p data-aos="fade-up" data-aos-delay="200">Ayudo a empresas y negocios a mejorar sus procesos con herramientas digitales fáciles de usar. Sin complicaciones técnicas, solo resultados que hacen crecer tu proyecto.</p>
-            <a href="#contacto" class="btn btn-primary" data-aos="fade-up" data-aos-delay="400">Hablemos de tu idea</a>
+        <div class="container hero-content">
+            <div class="hero-text" data-aos="fade-right">
+                <h1>Impulsamos tu marca. <br><span class="highlight">Multiplicamos tus resultados.</span></h1>
+                <p>Somos una Agencia de Conversión & Digital Growth. Transformamos por completo la presencia online de tu empresa mediante diseño web estratégico, control exacto de publicidad y renovaciones de marca que generan impacto real.</p>
+                <a href="#contacto" class="btn btn-primary mt-20">Inicia tu transformación</a>
+            </div>
         </div>
     </section>
 
-    <!-- Sección Qué Hago - Sin lenguaje técnico -->
-    <section id="servicios" class="servicios">
+    <!-- Filosofía -->
+    <section id="filosofia" class="filosofia bg-light">
+        <div class="container text-center">
+            <h2 data-aos="fade-up">El diseño debe generar crecimiento</h2>
+            <p class="subtitle" data-aos="fade-up" data-aos-delay="100">No hacemos páginas web solo para que se vean bonitas; construimos herramientas de conversión. En Clienteo creemos que la percepción lo es todo. Un negocio profesional necesita verse y operar como tal. Nuestro impacto se mide en la confianza que tu marca proyecta y en los clientes que logras captar.</p>
+        </div>
+    </section>
+
+    <!-- Soluciones Digitales -->
+    <section id="soluciones" class="soluciones">
         <div class="container">
-            <h2 data-aos="fade-right">¿Cómo puedo ayudarte?</h2>
-            <div class="grid-servicios">
+            <h2 class="text-center" data-aos="fade-up">¿Qué Hacemos?</h2>
+            <div class="grid-3">
                 <div class="card" data-aos="zoom-in" data-aos-delay="100">
-                    <h3>Presencia Digital</h3>
-                    <p>Creo páginas web que atraen clientes y reflejan la seriedad de tu negocio.</p>
+                    <img src="icon-web.png" alt="Diseño Web" class="icon">
+                    <h3>Páginas Web Estratégicas</h3>
+                    <p>Sitios web rápidos, intuitivos y diseñados específicamente para convertir visitantes en clientes.</p>
                 </div>
                 <div class="card" data-aos="zoom-in" data-aos-delay="200">
-                    <h3>Sistemas a Medida</h3>
-                    <p>Desarrollo herramientas para que dejes de usar Excel y automatices tus ventas o inventarios.</p>
+                    <img src="icon-ads.png" alt="Publicidad" class="icon">
+                    <h3>Control de Publicidad</h3>
+                    <p>Optimizamos tu inversión. Llevamos el control exacto de tus campañas para que llegues a la audiencia correcta.</p>
+                </div>
+                <div class="card" data-aos="zoom-in" data-aos-delay="300">
+                    <img src="icon-brand.png" alt="Branding" class="icon">
+                    <h3>Renovación Integral</h3>
+                    <p>Reinventamos la identidad de tu empresa, desde el color hasta la voz, posicionándote sobre tu competencia.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Sección Proyectos -->
-    <section id="proyectos" class="proyectos">
-        <div class="container">
-            <h2 data-aos="fade-right">Casos de Éxito</h2>
-            <div class="grid-proyectos">
-                <!-- Aquí incluimos el proyecto anterior -->
-                <div class="card-proyecto" data-aos="flip-left">
-                    <h3>Clienteo</h3>
-                    <p>Plataforma moderna diseñada para gestionar clientes de manera eficiente, optimizando los tiempos de respuesta y la organización del negocio.</p>
-                    <a href="#" class="link">Ver detalles &rarr;</a>
+    <!-- Transformación (Caso Clienteo) -->
+    <section id="transformacion" class="transformacion bg-dark text-white">
+        <div class="container grid-2 align-center">
+            <div class="text-content" data-aos="fade-right">
+                <h2>El impacto de una nueva perspectiva</h2>
+                <p>La mejor prueba de lo que podemos hacer por tu empresa es nuestra propia evolución. El diseño original de Clienteo era funcional, pero limitaba la percepción de nuestro verdadero potencial.</p>
+                <p>Al renovar por completo nuestra interfaz, lenguaje y estructura hacia el diseño que estás viendo ahora, la percepción de la marca cambió radicalmente. Ese es el nivel de transformación gráfica y de identidad que aplicamos a tu negocio.</p>
+            </div>
+            <div class="image-content" data-aos="fade-left">
+                <img src="mockup.png" alt="Transformación Clienteo" class="responsive-img shadow-img">
+            </div>
+        </div>
+    </section>
+
+    <!-- Implementación de Sistemas -->
+    <section id="sistemas" class="sistemas bg-light">
+        <div class="container text-center">
+            <h2 data-aos="fade-up">Tecnología para operar sin fricciones</h2>
+            <p class="subtitle" data-aos="fade-up" data-aos-delay="100">Además de hacer crecer tu marca hacia el exterior, te ayudamos a controlarla desde el interior. Implementamos sistemas robustos para que dejes los procesos manuales en el pasado.</p>
+            
+            <div class="grid-3 mt-40">
+                <div class="system-item" data-aos="fade-up" data-aos-delay="200">
+                    <h4>Punto de Venta (POS)</h4>
+                    <p>Cobro ágil y control de inventarios.</p>
+                </div>
+                <div class="system-item" data-aos="fade-up" data-aos-delay="300">
+                    <h4>Sistemas de Contabilidad</h4>
+                    <p>Finanzas claras, organizadas y al día.</p>
+                </div>
+                <div class="system-item" data-aos="fade-up" data-aos-delay="400">
+                    <h4>Sistemas ERP</h4>
+                    <p>Control total de la operación empresarial en una plataforma.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Scripts de animación -->
+    <!-- Contacto Inteligente -->
+    <section id="contacto" class="contacto">
+        <div class="container form-container" data-aos="fade-up">
+            <h2 class="text-center">¿Listo para evolucionar tu empresa?</h2>
+            <!-- Configura formspree con tu correo para recibir los emails. Reemplaza TU_ID_DE_FORMSPREE -->
+            <form id="formulario-contacto" action="https://formspree.io/f/TU_ID_DE_FORMSPREE" method="POST">
+                <div class="input-group">
+                    <label for="nombre">Nombre Completo (solo letras)</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+                <div class="grid-2 gap-20">
+                    <div class="input-group">
+                        <label for="telefono">Teléfono (solo números)</label>
+                        <input type="tel" id="telefono" name="telefono" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="correo">Correo Electrónico</label>
+                        <input type="email" id="correo" name="correo" required>
+                    </div>
+                </div>
+                <div class="input-group">
+                    <label for="contexto">Cuéntanos sobre ti y tu empresa</label>
+                    <textarea id="contexto" name="contexto" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary w-100 mt-20">Solicitar Asesoría por WhatsApp y Correo</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container text-center">
+            <p>&copy; 2026 Clienteo. Agencia de Conversión & Digital Growth. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="script.js"></script>
 </body>
