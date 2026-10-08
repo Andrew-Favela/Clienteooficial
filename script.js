@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", function() {
         const contexto = document.getElementById('contexto').value.trim();
 
         // AQUÍ PONES TU NÚMERO DE WHATSAPP (Con código de país, ejemplo: 52 para México)
-        const numeroWhatsApp = "528100000000"; 
+        const numeroWhatsApp = "528112580800"; 
 
         // Creamos el mensaje para WhatsApp
         const mensajeTexto = `¡Hola! Vengo de la página de Clienteo.%0A%0A*Mi nombre:* ${nombre}%0A*Teléfono:* ${telefono}%0A*Correo:* ${correo}%0A*Contexto de mi empresa:* ${contexto}`;
