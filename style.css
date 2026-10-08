@@ -63,9 +63,16 @@ h2 { font-size: 40px; color: var(--primary); margin-bottom: 24px; font-weight: 8
 .card .icon { width: 64px; height: 64px; margin-bottom: 24px; }
 .card h3 { font-size: 22px; color: var(--primary); margin-bottom: 12px; }
 
-/* Sistemas */
+/* Sistemas (Actualizado) */
 .system-item h4 { font-size: 20px; color: var(--primary); margin-bottom: 8px;}
 .system-item p { color: var(--text-muted); }
+
+/* Nueva clase para los íconos de sistemas */
+.icon-small {
+    width: 64px;
+    height: 64px;
+    margin-bottom: 16px;
+}
 
 /* Formulario */
 .form-container { max-width: 700px; background: var(--white); padding: 50px; border-radius: 20px; box-shadow: 0 20px 40px rgba(16, 24, 40, 0.08); }
