@@ -41,7 +41,6 @@ nav a:hover { color: var(--accent); }
 .w-100 { width: 100%; }
 
 /* Hero */
-/* Hero */
 .hero { 
     padding: 160px 0 100px; 
     background-color: var(--bg-light); /* Color de respaldo por si falla la imagen */
