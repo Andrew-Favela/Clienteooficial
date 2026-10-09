@@ -40,15 +40,31 @@ nav a:hover { color: var(--accent); }
 .btn-outline:hover { background: var(--primary); color: var(--white); }
 .w-100 { width: 100%; }
 
-/* Hero */
+/* Contenedor principal */
 .hero { 
     padding: 160px 0 100px; 
-    background-color: var(--bg-light); /* Color de respaldo por si falla la imagen */
-    background-image: url('hero-bg.png'); /* Ruta a la imagen */
-    background-size: cover; /* Ajusta la imagen para cubrir toda el área */
-    background-position: center right; /* Centra la imagen, priorizando la derecha si es necesario */
-    background-repeat: no-repeat; /* Evita que la imagen se repita */
-    position: relative; /* Necesario si después quieres añadir un overlay/filtro oscuro */
+    background-color: var(--bg-light);
+    position: relative; 
+    z-index: 1; /* Asegura que el contenido quede por encima */
+}
+
+/* Capa fantasma para la imagen */
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('hero-bg.png');
+    background-size: cover;
+    background-position: center right;
+    background-repeat: no-repeat;
+    
+    /* AQUÍ CONTROLAS LA OPACIDAD DE LA IMAGEN (0.0 a 1.0) */
+    opacity: 0.3; 
+    
+    z-index: -1; /* Manda la imagen al fondo, detrás de los textos */
 }
 
 /* Secciones Generales */
