@@ -62,7 +62,7 @@ nav a:hover { color: var(--accent); }
     background-repeat: no-repeat;
     
     /* AQUÍ CONTROLAS LA OPACIDAD DE LA IMAGEN (0.0 a 1.0) */
-    opacity: 0.3; 
+    opacity: 0.7; 
     
     z-index: -1; /* Manda la imagen al fondo, detrás de los textos */
 }
