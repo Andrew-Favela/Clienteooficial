@@ -41,10 +41,16 @@ nav a:hover { color: var(--accent); }
 .w-100 { width: 100%; }
 
 /* Hero */
-.hero { padding: 160px 0 100px; background-color: var(--bg-light); }
-.hero h1 { font-size: 56px; font-weight: 800; color: var(--primary); line-height: 1.1; margin-bottom: 24px; }
-.highlight { color: var(--accent); }
-.hero p { font-size: 20px; color: var(--text-muted); max-width: 700px; margin-bottom: 30px; }
+/* Hero */
+.hero { 
+    padding: 160px 0 100px; 
+    background-color: var(--bg-light); /* Color de respaldo por si falla la imagen */
+    background-image: url('hero-bg.png'); /* Ruta a la imagen */
+    background-size: cover; /* Ajusta la imagen para cubrir toda el área */
+    background-position: center right; /* Centra la imagen, priorizando la derecha si es necesario */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    position: relative; /* Necesario si después quieres añadir un overlay/filtro oscuro */
+}
 
 /* Secciones Generales */
 section { padding: 100px 0; }
